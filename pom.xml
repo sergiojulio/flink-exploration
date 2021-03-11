@@ -12,7 +12,7 @@
     <name>Flink Exploration: Word Count and other 'Hello World' apps</name>
   
     <properties>
-        <flink.version>1.10.1</hadoop.version>
+        <flink.version>1.10.1</flink.version>
     </properties>
 
     <dependencies>
