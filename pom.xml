@@ -7,12 +7,24 @@
     <groupId>com.github.lestermartin</groupId>
     <artifactId>flink-exploration</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <packaging>jar</packaging>
 
     <name>Flink Exploration: Word Count and other 'Hello World' apps</name>
   
     <properties>
-        <flink.version>1.10.1</flink.version>
+        <flink.version>1.12.2</flink.version>
     </properties>
 
     <dependencies>
@@ -25,6 +37,7 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-streaming-java_2.12</artifactId>
             <version>${flink.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
