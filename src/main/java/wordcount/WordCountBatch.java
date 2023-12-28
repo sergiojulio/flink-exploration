@@ -36,10 +36,6 @@ public class WordCountBatch
         }
     }
 
-    // *************************************************************************
-    //     USER FUNCTIONS
-    // *************************************************************************
-
     /**
      * Implements the string tokenizer that splits sentences into words as a user-defined
      * FlatMapFunction. The function takes a line (String) and splits it into multiple pairs in the
